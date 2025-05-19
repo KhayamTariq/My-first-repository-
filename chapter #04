@@ -1,0 +1,65 @@
+Question #01 ;
+# List of favorite pizzas
+favorite_pizzas = [
+    "Pepperoni Pizza",
+    "Margherita Pizza",
+    "BBQ Chicken Pizza",
+    "Meat Lover’s Pizza",
+    "Hawaiian Pizza",
+    "Veggie Pizza",
+    "Cheese Pizza"
+]
+
+# Print the list
+print("My Favorite Pizzas:")
+for pizza in favorite_pizzas:
+    print(f"- {pizza}")
+
+
+Question #02 ;
+# Animals grouped by common characteristics
+animals_by_characteristic = {
+    "Lay Eggs": ["Chicken", "Duck", "Snake", "Turtle", "Crocodile", "Penguin", "Ostrich"],
+    "Mammals": ["Dog", "Cat", "Elephant", "Whale", "Bat", "Dolphin", "Human"],
+    "Webbed Feet": ["Duck", "Swan", "Frog", "Otter"]
+}
+
+# Print each group
+for characteristic, animals in animals_by_characteristic.items():
+    print(f"{characteristic}:")
+    for animal in animals:
+        print(f" - {animal}")
+    print()
+
+
+Question #03 ;
+#Print number from 1 to 20 
+
+for i in range(1, 21):
+    print(i)
+
+
+Question #04 ;
+#Create a list of number from 1 to 1,000,000
+numbers = list(range(1, 1000001))
+
+Question #05 ;
+#Print odd number from 1 to 20
+for i in range(1, 21):
+    if i % 2 != 0:
+        print(i)
+
+Question #08 ;
+#Create a list of multiple of 3 from 3 to 30 
+multiples_of_3 = list(range(3, 31, 3))
+print(multiples_of_3)
+
+Question #09 ;
+#Create a list of first 10 cubes using list comprehensions
+cubes = [x**3 for x in range(1, 11)]
+print(cubes)
+
+Question #10
+Create a list of my favorite foods 
+favorite_foods = ["Pizza", "Burger", "Sushi", "Pasta", "Ice Cream"]
+print(favorite_foods)
