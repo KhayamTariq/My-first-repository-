@@ -1,0 +1,279 @@
+Question #01 :
+
+Use a dictionary to store information about a person you know. Store their first name, last name, age, and the city in which they live. You should have keys such as first_name, last_name, age, and city. Print each piece of information stored in your dictionary.
+
+# Creating a dictionary to store a person's information
+person = {
+    'first_name': 'Alice',
+    'last_name': 'Johnson',
+    'age': 28,
+    'city': 'New York'
+}
+
+# Printing each piece of information
+print("First name:", person['first_name'])
+print("Last name:", person['last_name'])
+print("Age:", person['age'])
+print("City:", person['city'])
+
+Question #02
+
+s: Use a dictionary to store people’s favorite numbers. 
+Think of five names, and use them as keys in your dictionary. Think of a favorite 
+number for each person, and store each as a value in your dictionary. Print 
+each person’s name and their favorite number. For even more fun, poll a few 
+friends and get some actual data for your program
+
+
+# Dictionary of people's favorite numbers
+favorite_numbers = {
+    'Alice': 7,
+    'Bob': 3,
+    'Charlie': 11,
+    'Diana': 5,
+    'Ethan': 42
+}
+
+# Print each person's favorite number
+for name, number in favorite_numbers.items():
+    print(f"{name}'s favorite number is {number}.")
+
+Question #03 ;
+
+ A Python dictionary can be used to model an actual dictionary. 
+However, to avoid confusion, let’s call it a glossary.
+•	 Think of five programming words you’ve learned about in the previous 
+chapters. Use these words as the keys in your glossary, and store their 
+meanings as values.
+•	 Print each word and its meaning as neatly formatted output. You might 
+print the word followed by a colon and then its meaning, or print the word 
+on one line and then print its meaning indented on a second line. Use the 
+newline character (\n) to insert a blank line between each word-meaning 
+pair in your output 
+
+# Programming glossary using a dictionary
+glossary = {
+    'variable': 'A container for storing data values.',
+    'function': 'A block of reusable code that performs a specific task.',
+    'loop': 'A control structure that repeats a block of code.',
+    'dictionary': 'A collection of key-value pairs in Python.',
+    'string': 'A sequence of characters, used to represent text.'
+}
+
+# Print each word and its meaning
+for word, meaning in glossary.items():
+    print(f"{word.title()}:\n  {
+
+Question #04 ;
+
+ Now that you know how to loop through a dictionary, clean 
+up the code from Exercise 6-3 (page 99) by replacing your series of print()
+calls with a loop that runs through the dictionary’s keys and values. When 
+you’re sure that your loop works, add five more Python terms to your glossary. 
+When you run your program again, these new words and meanings should 
+automatically be included in the output
+
+# Glossary with 10 programming terms
+glossary = {
+    'variable': 'A container for storing data values.',
+    'function': 'A block of reusable code that performs a specific task.',
+    'loop': 'A control structure that repeats a block of code.',
+    'dictionary': 'A collection of key-value pairs in Python.',
+    'string': 'A sequence of characters, used to represent text.',
+    'list': 'An ordered collection of items in Python.',
+    'boolean': 'A data type with only two possible values: True or False.',
+    'tuple': 'An immutable (unchangeable) ordered list of items.',
+    'comment': 'A line in code that is not executed, used to explain the code.',
+    'indentation': 'Whitespace used to define blocks of code in Python.'
+}
+
+# Loop through the dictionary and print each term and its meaning
+for word, meaning in glossary.items():
+    print(f"{word.title()}:\n  {meaning}\n")
+
+Question #05
+
+Make a dictionary containing three major rivers and the country each river runs through. One key-value pair might be 'nile': 'egypt'. •	 Use a loop to print a sentence about each river, such as The Nile runs through Egypt. •	 Use a loop to print the name of each river included in the dictionary.
+
+# Dictionary of rivers and the countries they run through
+rivers = {
+    'nile': 'egypt',
+    'amazon': 'brazil',
+    'yangtze': 'china'
+}
+
+# Print a sentence about each river
+for river, country in rivers.items():
+    print(f"The {river.title()} runs through {country.title()}.")
+
+print()  # Blank line for spacing
+
+# Print the name of each river
+print("Rivers included in the dictionary:")
+for river in rivers.keys():
+    print(f"- {river.title()}")
+
+Question # 06 ;
+
+Use the code in favorite_languages.py (page 97).
+•	 Make a list of people who should take the favorite languages poll. Include 
+some names that are already in the dictionary and some that are not. 
+•	 Loop through the list of people who should take the poll. If they have 
+already taken the poll, print a message thanking them for responding. 
+If they have not yet taken the poll, print a message inviting them to take 
+the poll.
+
+# Dictionary of people who have taken the poll
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'rust',
+    'phil': 'python'
+}
+
+# List of people who should take the poll (some have, some haven't)
+people_to_poll = ['jen', 'edward', 'mike', 'anna', 'sarah']
+
+# Loop through the list and check if they've taken the poll
+for person in people_to_poll:
+    if person in favorite_languages:
+        print(f"Thank you, {person.title()}, for responding to the poll.")
+    else:
+        print(f"{person.title()}, please take our favorite languages poll!")
+
+Question #07 ;
+rself
+6-7. People: Start with the program you wrote for Exercise 6-1 (page 99). 
+Make two new dictionaries representing different people, and store all three 
+dictionaries in a list called people. Loop through your list of people. As you 
+loop through the list, print everything you know about
+
+# Original person dictionary
+person1 = {
+    'first_name': 'Alice',
+    'last_name': 'Johnson',
+    'age': 28,
+    'city': 'New York'
+}
+
+# Two new people dictionaries
+person2 = {
+    'first_name': 'Bob',
+    'last_name': 'Smith',
+    'age': 34,
+    'city': 'Chicago'
+}
+
+person3 = {
+    'first_name': 'Charlie',
+    'last_name': 'Lee',
+    'age': 22,
+    'city': 'San Francisco'
+}
+
+# List containing all three people
+people = [person1, person2, person3]
+
+# Loop through the list and print info about each person
+for person in people:
+    print(f"Name: {person['first_name']} {person['last_name']}")
+    print(f"Age: {person['age']}")
+    print(f"City: {person['city']}\n")
+Start with the program you wrote for Exercise 6-1 (page 99). 
+Make two new dictionaries representing different people, and store all three 
+dictionaries in a list called people. Loop through your list of people. As you 
+loop through the list, print everything you know about each person
+
+Question #08
+Make several dictionaries, where each dictionary represents a different pet. In each dictionary, include the kind of animal and the owner’s name. 
+Store these dictionaries in a list called pets. Next, loop through your list and as 
+you do, print everything you know about each pet
+
+# Several dictionaries, each representing a different pet
+pet1 = {
+    'animal': 'dog',
+    'owner': 'Alice'
+}
+
+pet2 = {
+    'animal': 'cat',
+    'owner': 'Bob'
+}
+
+pet3 = {
+    'animal': 'parrot',
+    'owner': 'Charlie'
+}
+
+pet4 = {
+    'animal': 'rabbit',
+    'owner': 'Diana'
+}
+
+pet5 = {
+    'animal': 'hamster',
+    'owner': 'Ethan'
+}
+
+# Store all pet dictionaries in a list
+pets = [pet1, pet2, pet3, pet4, pet5]
+
+# Loop through the list and print info about each pet
+for pet in pets:
+    print(f"Animal: {pet['animal'].title()}")
+    print(f"Owner: {pet['owner']}\n")
+
+Question #09 ;
+
+Modify your program from Exercise 6-2 (page 99) 
+so each person can have more than one favorite number. Then print each person’s name along with their favorite numbers
+
+# Dictionary where each person has a list of favorite numbers
+favorite_numbers = {
+    'Alice': [7, 12],
+    'Bob': [3],
+    'Charlie': [11, 14, 21],
+    'Diana': [5, 9],
+    'Ethan': [42]
+}
+
+# Print each person's name and their favorite numbers
+for name, numbers in favorite_numbers.items():
+    print(f"{name}'s favorite numbers are:")
+    for number in numbers:
+        print(f"  - {number}")
+    print()  # Add a blank line between entries .
+
+Question #10 ;
+
+Make a dictionary called cities. Use the names of three cities as 
+keys in your dictionary. Create a dictionary of information about each city and 
+include the country that the city is in, its approximate population, and one fact 
+about that city. The keys for each city’s dictionary should be something like 
+country, population, and fact. Print the name of each city and all of the information you have stored about it.
+
+# Dictionary of cities with details about each
+cities = {
+    'paris': {
+        'country': 'France',
+        'population': '2.1 million',
+        'fact': 'Paris is known as the "City of Light".'
+    },
+    'tokyo': {
+        'country': 'Japan',
+        'population': '13.9 million',
+        'fact': 'Tokyo is the most populous city in the world.'
+    },
+    'nairobi': {
+        'country': 'Kenya',
+        'population': '4.4 million',
+        'fact': 'Nairobi is home to a national park within the city limits.'
+    }
+}
+
+# Loop through the cities and print their information
+for city, info in cities.items():
+    print(f"\nCity: {city.title()}")
+    print(f"  Country: {info['country']}")
+    print(f"  Population: {info['population']}")
+    print(f"  Fact: {info['fact']}")
