@@ -1,0 +1,117 @@
+Question # 01 ;
+
+Write a program that asks the user what kind of rental car they
+
+would like. Print a message about that car, such as “Let me see if I can find you
+
+a Subaru.”
+
+# Ask the user what kind of rental car they would like
+car = input("What kind of rental car would you like? ")
+
+# Print a message about the requested car
+print(f"Let me see if I can find you a {car}.")
+
+Question #02 ; 
+Write a program that asks the user how many people
+
+are in their dinner group. If the answer is more than eight, print a message saying they’ll have to wait for a table. Otherwise, report that their table is ready
+
+# Ask the user how many people are in their dinner group
+group_size = int(input("How many people are in your dinner group? "))
+
+# Check the group size and print the appropriate message
+if group_size > 8:
+    print("You'll have to wait for a table.")
+else:
+    print("Your table is ready.")
+
+Question # 03; 
+
+Ask the user for a number, and then report whether the
+
+number is a multiple of 10 or not
+
+# Ask the user for a number
+number = int(input("Enter a number: "))
+
+# Check if the number is a multiple of 10
+if number % 10 == 0:
+    print(f"{number} is a multiple of 10.")
+else:
+    print(f"{number} is not a multiple of 10.")
+
+Question #04 ;
+
+Write a loop that prompts the user to enter a series of
+
+pizza toppings until they enter a 'quit' value. As they enter each topping,
+
+print a message saying you’ll add that topping to their pizza.
+
+
+# Prompt the user to enter pizza toppings
+while True:
+    topping = input("Enter a pizza topping (or type 'quit' to finish): ")
+
+    if topping.lower() == 'quit':
+        break
+    else:
+        print(f"I'll add {topping} to your pizza.")
+
+Question #05 ; 
+
+Write a loop that prompts the user to enter a series of pizza toppings until they enter a 'quit' value. As they enter each topping, print a message saying you’ll add that topping to their pizza.
+
+while True:
+    topping = input("Enter a pizza topping (or type 'quit' to finish): ")
+    
+    if topping.lower() == 'quit':
+        print("Finished adding toppings.")
+        break
+    else:
+        print(f"I'll add {topping} to your pizza.")
+
+Question #06 ;
+
+kets: A movie theater charges different ticket prices depending on a person’s age. If a person is under the age of 3, the ticket is free; if they are between 3 and 12, the ticket is $10; and if they are over age 12, the ticket is $15. Write a loop in which you ask users their age, and then tell them the cost of their movie ticket. (
+
+while True:
+    age_input = input("Enter your age (or type 'quit' to exit): ")
+
+    if age_input.lower() == 'quit':
+        print("Goodbye!")
+        break
+
+    age = int(age_input)
+
+    if age < 3:
+        print("Your ticket is free.")
+    elif age <= 12:
+        print("Your ticket costs $10.")
+    else:
+        print("Your ticket costs $15.")
+
+Question #08 ;
+
+Make a list called sandwich_orders and fill it with the names of various sandwiches. Then make an empty list called finished_sandwiches. Loop through the list of sandwich orders and print a message for each order, such as I made your tuna sandwich. As each sandwich is made, move it to the list of finished sandwiches. After all the sandwiches have been made, print a message listing each sandwich that was made.
+
+# List of sandwich orders
+sandwich_orders = ['tuna', 'ham', 'turkey', 'veggie', 'chicken']
+finished_sandwiches = []
+
+# Process each sandwich order
+while sandwich_orders:
+    current_sandwich = sandwich_orders.pop(0)
+    print(f"I made your {current_sandwich} sandwich.")
+    finished_sandwiches.append(current_sandwich)
+
+# Print all finished sandwiches
+print("\nAll sandwiches made:")
+for sandwich in finished_sandwiches:
+    print(f"- {sandwich} sandwich")
+
+
+
+
+
