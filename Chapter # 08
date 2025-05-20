@@ -1,0 +1,97 @@
+Question # 01 ;
+
+Write a function called display_message() that prints one sentence telling everyone what you are learning about in this chapter. Call the 
+function, and make sure the message displays correctly.
+
+def display_message():
+    print("In this chapter, I'm learning about functions in Python.")
+
+# Call the function
+display_message()
+
+Question #02 ; 
+
+Write a function called favorite_book() that accepts one parameter, title. The function should print a message, such as One of my favorite books is Alice in Wonderland. Call the function, making sure to include a book title as an argument in the function call.
+
+def favorite_book(title):
+    print(f"One of my favorite books is {title}.")
+
+# Call the function with a book title
+favorite_book("Alice in Wonderland")
+
+Question #03 ;
+
+Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function once using positional arguments to make a shirt. Call the function a second time using keyword arguments
+
+
+def make_shirt(size, message):
+    print(f"The shirt size is {size} and the message printed on it is: '{message}'.")
+
+# Call using positional arguments
+make_shirt('Small', "Code like a pro")
+
+# Call using keyword arguments
+make_shirt(size='XL', message="Debugging is fun")
+
+Question #04 ;
+
+Modify the make_shirt() function so that shirts are large by default with a message that reads I love Python. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message
+
+def make_shirt(size='Large', message='I love Python'):
+    print(f"The shirt size is {size} and the message printed on it is: '{message}'.")
+
+# Make a large shirt with the default message
+make_shirt()
+
+# Make a medium shirt with the default message
+make_shirt(size='Medium')
+
+# Make a shirt of any size with a different message
+make_shirt(size='Small', message='Code is life')
+
+Question #05 ;
+
+Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Reykjavik is in Iceland. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default
+
+def describe_city(city, country='Iceland'):
+    print(f"{city} is in {country}.")
+
+# Calls with different cities
+describe_city('Reykjavik')            # Uses default country Iceland
+describe_city('Akureyri')              # Uses default country Iceland
+describe_city('Paris', country='France')  # Overrides default country
+
+Question #06 ;
+
+Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+
+def city_country(city, country):
+    return f"{city}, {country}"
+
+Question #07 ;
+
+Write a function called make_album() that builds a dictionary describing a music album. The function should take in an artist name and an album title, and it should return a dictionary containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that the dictionaries are storing the album information correctly. Use None to add an optional parameter to make_album() that allows you to store the number of songs on an album. If the calling line includes a value for the number of songs, add that value to the album’s dictionary. Make at least one new function call that includes the number of songs on an album.
+
+def make_album(artist, title, songs=None):
+    album = {
+        'artist': artist,
+        'title': title
+    }
+    if songs is not None:
+        album['songs'] = songs
+    return album
+
+# Create three album dictionaries
+album1 = make_album('Adele', '25')
+album2 = make_album('Drake', 'Scorpion')
+album3 = make_album('Taylor Swift', '1989', songs=13)  # Including number of songs
+
+# Print each album
+print(album1)
+print(album2)
+print(album3)
+
+
+
+
+
